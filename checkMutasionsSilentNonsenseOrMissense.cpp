@@ -1,7 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-
 void cut(string rnaSequence)
 {
 
@@ -138,25 +137,21 @@ int main()
 
             if(protein1==protein2){
                 cout<<endl;
-                cout<<"Protein: "<<protein1<<endl;
-                cout<<"mRNA-1: "<<proteinSequence1<<endl;
-                cout<<"mRNA-2: "<<proteinSequence2<<endl;
-                cout<<"It is a Silent Mutations"<<endl;
+                cout<<"mRNA-1: "<<proteinSequence1<<" ->"<<"Protein-1: "<<protein1<<endl;
+                cout<<"mRNA-2: "<<proteinSequence2<<" ->"<<"Protein-2: "<<protein2<<endl;
+                cout<<"<- It is a Silent Mutations ->"<<endl;
             }
             else if(protein1=="_" || protein2=="_"){
                 cout<<endl;
-                cout<<"Protein: "<<protein1<<endl;
-                cout<<"mRNA-1: "<<proteinSequence1<<endl;
-                cout<<"mRNA-2: "<<proteinSequence2<<endl;
-                cout<<"It is a Nonsense Mutations"<<endl;
+                cout<<"mRNA-1: "<<proteinSequence1<<" ->"<<"Protein-1: "<<protein1<<endl;
+                cout<<"mRNA-2: "<<proteinSequence2<<" ->"<<"Protein-2: "<<protein2<<endl;
+                cout<<"<- It is a Nonsense Mutations ->"<<endl;
             }
             else{
                 cout<<endl;
-                cout<<"Protein-1: "<<protein1<<endl;
-                cout<<"Protein-2: "<<protein2<<endl;
-                cout<<"mRNA-1: "<<proteinSequence1<<endl;
-                cout<<"mRNA-2: "<<proteinSequence2<<endl;
-                cout<<"It is a Missense Mutations"<<endl;
+                cout<<"mRNA-1: "<<proteinSequence1<<" ->"<<"Protein-1: "<<protein1<<endl;
+                cout<<"mRNA-2: "<<proteinSequence2<<" ->"<<"Protein-2: "<<protein2<<endl;
+                cout<<"<- It is a Missense Mutations ->"<<endl;
             }
 
         }
@@ -165,4 +160,3 @@ int main()
 
     return 0;
 }
-
